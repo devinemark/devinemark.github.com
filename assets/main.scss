@@ -2,4 +2,120 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+/* @import "minima"; */
+/* $font_0 = "playfair display" */
+
+$background-color-header: #cfcfcf26;
+$color-text-dark: #292929;
+$color-text-light: #A0A09F;
+$color-text-light-on-light: #605E5E;
+$font-subtitle: sans-serif;
+$font-title: 'playfair display', serif;
+
+
+body, header {
+  width: 100%;
+  margin: 0;
+}
+
+div .wrapper > * {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin: 0;
+  padding-top: 37px;
+  background-color: $background-color-header;
+}
+
+footer {
+  margin: 0;
+
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+
+ul[role=navigation] {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul[role=navigation] li {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin: 15px;
+  vertical-align: text-top;
+}
+
+.username {
+  display: none;
+}
+
+.contact-list p {
+  text-align: center;
+  color: $color-text-light-on-light;
+  font: normal normal normal 14px/1.4em $font-subtitle
+}
+
+.site-title {
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+  display: block;
+  margin-top: 0;
+  letter-spacing: .1em;
+  color: $color-text-dark;
+  font: normal normal normal 32px/1.4em $font-title;
+  word-wrap: break-word;
+  vertical-align: baseline;
+}
+
+.sub-title {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  color: $color-text-light;
+  font: normal normal normal 14px/1.4em $font-subtitle
+}
+
+
+a.page-link {
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 1em;
+  color: $color-text-dark;
+  /* float: left; */
+}
+
+a.page-link.current-page {
+  color: $color-text-light;
+}
+
+main.page-content {
+  /* clear: left; */
+}
+
+

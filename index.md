@@ -1,9 +1,7 @@
 ---
+title: portfolio
 layout: default
 ---
-
-Devine Mark Imagery
-===================
 
 Pura Vida!
 ----------
