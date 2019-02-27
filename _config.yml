@@ -16,22 +16,31 @@
 title: Devine Mark
 subtitle: Imagery
 author: Megan Adamcin
-email: adamcin+devinemark@gmail.com
+email: devinemarkimagery@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to the love of photography shown here at Devine Mark Imagery. Megan is a dog mom, a wife, and a health advocate from Portland, Oregon.
+  She enjoys traveling the world and capturing the art on the other side of her lens. Please enjoy the images not only in her home state but those
+  also acquired through travels all over the world.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://devinemark.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: markadamcin
+url: "http://www.devinemarkimagery.com" # the base hostname & protocol for your site, e.g. http://example.com
+gallery_baseurl: //www.devinemarkimagery.com/galleries
+#twitter_username: markadamcin
 github_username: devinemark
 instagram_username: devinemarkimagery
+contactme_url: https://www.devinemarkimagery.com/api/contactme
+recaptcha_sitekey: 6LeI5pMUAAAAAI3DxaP5XQFwy3NmGaJ44gkye89p
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   #- jekyll-feed
+header_pages:
+  - index.md
+  - pets.md
+  - varietal.md
+  - bio.md
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

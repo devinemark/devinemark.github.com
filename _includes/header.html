@@ -3,15 +3,22 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <h1 class="main-title">{{ site.title | escape }}</h1>
-      <span class="sub-title">{{ site.subtitle | escape }}</span>
-    </a>
+    <div class="titles">
+      <a class="site-title" rel="homepage" href="{{ "/" | relative_url }}">
+        <img class="logo" src="{{ "/assets/LogoBlack_solo.png" | relative_url }}" alt="{{ site.title | escape }} | {{ site.subtitle | escape }}">
+        <h1 class="main-title">{{ site.title | escape }}</h1>
+        <span class="sub-title">{{ site.subtitle | escape }}</span>
+      </a>
+    </div>
 
     {%- if page_paths -%}
     <nav class="site-nav">
       <ul role="navigation">
+        {%- for path in default_paths -%}
+          <!-- site path {{ path }} -->
+        {%- endfor -%}
         {%- for path in page_paths -%}
+          <!-- page path {{ path }} -->
           {%- assign my_page = site.pages | where: "path", path | first -%}
           {%- if my_page.title -%}
           <li>

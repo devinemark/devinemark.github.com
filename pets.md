@@ -1,6 +1,7 @@
 ---
-title: pets
-layout: default
+title: Pets
+layout: gallery
+gallery: pets
 ---
 
 Pets
